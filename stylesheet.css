@@ -1,5 +1,4 @@
-*
-{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -10,47 +9,60 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: whitesmoke;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background: #f8f8f8; /* Light background color */
+    font-family: 'Arial', sans-serif; /* Updated font family */
+}
+
+.container {
+    text-align: center;
 }
 
 .gif {
-    height: 100%;
-    width: 100%;
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px; /* Add border radius to the gif */
 }
 
 h2 {
-    text-align: center;
-    font-size: 1.5em;
+    font-size: 2em; /* Slightly larger font size */
     color: #e94d58;
-    margin: 15px 0;
+    margin: 20px 0; /* Increased margin */
 }
+
 .btn-group {
     width: 100%;
-    height: 50px;
     display: flex;
     justify-content: center;
     margin-top: 50px;
 }
+
 button {
-    position: absolute;
     width: 150px;
-    height: inherit;
-    color: white;
+    height: 50px;
+    color: #fff;
     font-size: 1.2em;
-    border-radius: 30px;
+    border-radius: 25px;
     outline: none;
     cursor: pointer;
-    box-shadow: 0 2px 4px gray;
-    border: 2px solid #e94d58;
-    font-size: 1.2em;
+    border: none;
+    margin: 0 10px;
+    transition: background 0.3s ease-in-out, transform 0.2s ease-in-out;
 }
+
 button:nth-child(1) {
-    margin-left: -200px;
-    background: #e94d58;
+    background: linear-gradient(45deg, #ff7e5f, #feb47b);
+    box-shadow: 0 4px 8px rgba(255, 126, 95, 0.3);
 }
+
 button:nth-child(2) {
-    margin-right: -200px;
-    background: white;
+    background: linear-gradient(45deg, #fff, #fff);
     color: #e94d58;
+    border: 2px solid #e94d58;
+    box-shadow: 0 4px 8px rgba(233, 77, 88, 0.3);
+}
+
+/* Hover effect on buttons */
+button:hover {
+    opacity: 0.9;
+    transform: scale(1.1);
 }
