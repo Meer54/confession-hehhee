@@ -3,9 +3,15 @@ const gif = document.querySelector(".gif");
 const yesBtn = document.querySelector(".yes-btn");
 const noBtn = document.querySelector(".no-btn");
 
+// Original GIF URL
+const originalGifUrl = "https://media.giphy.com/media/FTGah7Mx3ss04PcasF/giphy.gif";
+
+// New GIF URL for "Yes" response
+const newGifUrl = "https://media.giphy.com/media/UMon0fuimoAN9ueUNP/giphy.gif";
+
 yesBtn.addEventListener("click", () => {
   question.innerHTML = "Yay, I like you too!!";
-  gif.style.display = "block"; // Display the GIF when 'Yes' is clicked
+  gif.src = newGifUrl; // Change the GIF to a new one
 });
 
 noBtn.addEventListener("mouseover", () => {
